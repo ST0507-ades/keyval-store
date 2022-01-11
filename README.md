@@ -1,8 +1,8 @@
-# gpa-calculator
+# Key-Value store
 
 > When in VSCode, press `CTRL + SHIFT + V` to view this `README.md` pretty formatted
 
-## Backend Setup
+## Setup
 
 > All following instructions are to be executed in the `backend` folder
 
@@ -41,10 +41,3 @@
     ```
     ./backend> npm run dev
     ```
-
-## Website Setup
-
-> All following instructions are to be executed in the `website` folder
-
-1. Install the Live Server extension
-2. Right click `index.html` and "Open with Live Server"
