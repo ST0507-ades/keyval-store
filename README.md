@@ -6,7 +6,7 @@
 
 1. Setup `.env` file.
 
-    Create a new file `.env` with the following content:
+    Create a new file `.env` in the root directory with the following content:
 
     ```
     DATABASE_URL=<DATABASE_URL>
