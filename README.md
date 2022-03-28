@@ -4,8 +4,6 @@
 
 ## Setup
 
-> All following instructions are to be executed in the `backend` folder
-
 1. Setup `.env` file.
 
     Create a new file `.env` with the following content:
@@ -23,13 +21,13 @@
 2. Install dependencies
 
     ```
-    ./backend> npm install
+    > npm install
     ```
 
 3. Initialize Database
 
     ```
-    ./backend> npm run init_db
+    > npm run init_db
     ```
 
     > Question: What is this executing? Which files are involved? How do you know?
@@ -37,11 +35,13 @@
 4. Test that you setup correctly
 
     ```
-    ./backend> npm run test
+    > npm run test
     ```
 
 5. Run the server in development mode (with auto-reload)
 
     ```
-    ./backend> npm run dev
+    > npm run dev
     ```
+    
+    > Question: What is this executing? What command exactly?
