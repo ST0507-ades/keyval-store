@@ -16,7 +16,7 @@ const CREATE_TABLE_SQL = `
 module.exports.CREATE_TABLE_SQL = CREATE_TABLE_SQL;
 
 function getTimestampAfterNDays(n) {
-    return Math.floor(new Date().setDate(new Date().getDate() + n) / 1000);
+    return Math.floor(new Date().getTime() / 1000) + n * 24 * 60 * 60;
 }
 module.exports.getTimestampAfterNDays = getTimestampAfterNDays;
 
