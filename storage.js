@@ -49,6 +49,7 @@ module.exports.getAll = function getAll(lastId = 0, limit = 20, isExpired = 1) {
         `
         SELECT * FROM ${TABLE_NAME}
         WHERE id > $1 AND expire_on ${operator} $2
+        ORDER BY id
         LIMIT $3`,
         [lastId, now, limit],
     ).then((result) => result.rows);
