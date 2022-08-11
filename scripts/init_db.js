@@ -6,9 +6,9 @@ database
     .query(
         `
     DROP TABLE IF EXISTS ${storage.TABLE_NAME};
-    ${storage.CREATE_TABLE_SQL}
     `,
     )
+    .then(() => database.query(storage.CREATE_TABLE_SQL))
     .then(() => {
         console.log('Successfully created!');
     })

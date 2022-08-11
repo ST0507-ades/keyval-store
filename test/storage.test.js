@@ -1,7 +1,7 @@
 const { query, end } = require('../database');
 const { add, get, getTimestampAfterNDays } = require('../storage');
 
-beforeEach(() => query('BEGIN;'));
+beforeEach(() => query('START TRANSACTION;'));
 afterEach(() => query('ROLLBACK;'));
 afterAll(() => end());
 it('Should provide a key if not given', async () => {
